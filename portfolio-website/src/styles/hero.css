@@ -1,0 +1,43 @@
+.hero {
+  padding: 80px 60px;
+}
+
+
+.terminal {
+  color: #3fb950;
+  font-family: monospace;
+}
+
+
+.hero h1 {
+  font-size: 64px;
+  margin: 20px 0;
+}
+
+
+.hero h2 {
+  color: #8b949e;
+  font-weight: normal;
+}
+
+
+.description {
+  color: #c9d1d9;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+
+.buttons button {
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}

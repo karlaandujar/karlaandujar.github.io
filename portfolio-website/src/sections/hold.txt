@@ -1,0 +1,11 @@
+Hero.jsx
+
+About.jsx
+
+Skills.jsx
+
+Projects.jsx
+
+Experience.jsx
+
+Contact.jsx

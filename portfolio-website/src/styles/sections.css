@@ -1,0 +1,11 @@
+section {
+  padding: 80px 60px;
+  border-bottom: 1px solid #30363d;
+}
+
+
+section h2 {
+  font-family: monospace;
+  color: #58a6ff;
+  font-size: 32px;
+}

@@ -15,14 +15,8 @@ function Hero() {
 
 
       <h2>
-        Computer Science Student @ Virginia Tech
+        Honors Computer Science Student @ Virginia Tech
       </h2>
-
-
-      <p className="description">
-        I build software projects focused on AI,
-        web development, and problem solving.
-      </p>
 
 
       <div className="buttons">

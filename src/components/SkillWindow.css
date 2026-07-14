@@ -1,0 +1,186 @@
+.skill-window {
+
+    background:#0d1117;
+
+    border:1px solid #30363d;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    margin:35px 0;
+
+    width:min(900px,90%);
+
+}
+
+
+/* Top bar like VS Code */
+
+.window-header {
+
+    height: 45px;
+
+    background: #161b22;
+
+    border-bottom: 1px solid #30363d;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 18px;
+
+    gap: 20px;
+
+}
+
+
+.window-header p {
+
+    margin: 0;
+
+    font-family: monospace;
+
+    color: #c9d1d9;
+
+    font-size: 14px;
+
+}
+
+
+
+/* Red yellow green dots */
+
+.window-buttons {
+
+    display: flex;
+
+    gap: 8px;
+
+}
+
+
+.window-buttons span {
+
+    width: 12px;
+
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: #30363d;
+
+}
+
+
+
+/* Editor area */
+
+.window-content {
+
+    padding: 30px;
+
+    font-family: monospace;
+
+}
+
+
+
+.code-line {
+
+    color: #8b949e;
+
+    margin: 15px 0;
+
+}
+
+
+
+/* Skill scrolling row */
+
+.skill-track {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 45px;
+
+    width: max-content;
+
+    animation: scroll-skills 18s linear infinite;
+
+}
+
+
+/* pause when hovering */
+
+.skill-window:hover .skill-track {
+
+    animation-play-state: paused;
+
+}
+
+
+
+.skill-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    min-width: 90px;
+
+    color: #c9d1d9;
+
+}
+
+
+
+.skill-item img {
+
+    width: 55px;
+
+    height: 55px;
+
+    object-fit: contain;
+
+}
+
+
+
+.skill-item span {
+
+    text-align: center;
+
+    font-size: 14px;
+
+}
+
+
+
+/* scrolling animation */
+
+@keyframes scroll-skills {
+
+    from {
+
+        transform: translateX(0);
+
+    }
+
+
+    to {
+
+        transform: translateX(-50%);
+
+    }
+
+}

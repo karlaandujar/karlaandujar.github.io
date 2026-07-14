@@ -3,6 +3,16 @@
   min-height: 700px;
 }
 
+.ide-window {
+
+    min-height:100vh;
+
+    padding:30px;
+
+    box-sizing:border-box;
+
+}
+
 
 /* Left sidebar */
 
@@ -43,5 +53,11 @@
 /* Main content */
 
 .content {
-  flex: 1;
+
+    flex:1;
+
+    padding:40px;
+
+    overflow-y:auto;
+
 }

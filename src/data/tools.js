@@ -1,0 +1,40 @@
+const tools = [
+    {
+        name:"React",
+        image:"/skills/react.png"
+    },
+    {
+        name:"Node.js",
+        image:"/skills/node.png"
+    },
+    {
+        name:"Git",
+        image:"/skills/git.png"
+    },
+    {
+        name:"GitHub",
+        image:"/skills/github.png"
+    },
+    {
+        name:"Linux",
+        image:"/skills/linux.png"
+    },
+    {
+        name:"Docker",
+        image:"/skills/docker.png"
+    },
+    {
+        name:"JupyterHub",
+        image:"/skills/jupyter.png"
+    },
+    {
+        name:"Vite",
+        image:"/skills/vite.png"
+    },
+    {
+        name:"Ollama",
+        image:"/skills/ollama.png"
+    }
+];
+
+export default tools;

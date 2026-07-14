@@ -19,15 +19,25 @@ function Hero() {
       </h2>
 
 
-      <div className="buttons">
+      <div>
 
-        <button>
-          Resume
-        </button>
+        <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="resume-button"
+        >
+            Resume
+        </a>
 
-        <button>
-          GitHub
-        </button>
+        <a
+            href="https://github.com/karlaandujar"
+            target="_blank"
+            rel="noreferrer"
+            className="github-button"
+        >
+            GitHub
+        </a>
 
       </div>
 

@@ -34,3 +34,46 @@
   border: none;
   cursor: pointer;
 }
+
+.resume-button,
+.github-button {
+
+    display:inline-block;
+
+    padding:12px 24px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-family:monospace;
+
+    margin-right:15px;
+
+}
+
+
+.resume-button {
+
+    background:#58a6ff;
+
+    color:white;
+
+}
+
+
+.github-button {
+
+    border:1px solid #30363d;
+
+    color:#c9d1d9;
+
+}
+
+
+.resume-button:hover,
+.github-button:hover {
+
+    transform:translateY(-3px);
+
+}

@@ -12,127 +12,87 @@ function ProjectCard({ project }) {
 
     return (
         <>
-            <motion.div
-                className="project-card"
-
+            <motion.div className="project-card"
                 whileHover={{
                     y: -8,
                     scale: 1.02
                 }}
-
                 whileTap={{
                     scale: .98
                 }}
-
-                onClick={() => setIsFlipped(true)}
-            >
+                onClick={() => setIsFlipped(true)}>
 
                 <h3>{project.title}</h3>
-
                 <p>{project.description}</p>
-
+                
                 <div className="tech-stack">
-
                     {project.tech.map((t) => (
-
                         <span
                             className="tech"
                             key={t}
                         >
                             {t}
                         </span>
-
                     ))}
-
                 </div>
 
                 <p className="open-file">
-
                     Open {project.title}.jsx →
-
                 </p>
 
             </motion.div>
 
-
             <AnimatePresence>
-
                 {isFlipped && (
-
                     <motion.div
-
                         className="overlay"
-
                         initial={{ opacity: 0 }}
-
                         animate={{ opacity: 1 }}
-
                         exit={{ opacity: 0 }}
+                        onClick={() => setIsFlipped(false)}>
 
-                        onClick={() => setIsFlipped(false)}
-
-                    >
-
-                        <motion.div
-
-                            className="project-card-expanded"
-
+                        <motion.div className="project-card-expanded"
                             initial={{
                                 rotateY: -90,
                                 scale: .75,
                                 opacity: 0
                             }}
-
                             animate={{
                                 rotateY: 0,
                                 scale: 1,
                                 opacity: 1
                             }}
-
                             exit={{
                                 rotateY: 90,
                                 scale: .75,
                                 opacity: 0
                             }}
-
                             transition={{
                                 duration: .45
                             }}
-
-                            onClick={(e) => e.stopPropagation()}
-
-                        >
+                            onClick={(e) => e.stopPropagation()} >
 
                             <button
                                 className="close-btn"
                                 onClick={() => setIsFlipped(false)}
                             >
-
                                 ✕
-
                             </button>
 
                             <h2>{project.title}</h2>
-
                             <h3>Inspiration</h3>
-
                             <p>{project.inspiration}</p>
-
                             <h3>Tech Stack</h3>
 
                             <div className="tech-stack expanded-tech">
-
                                 {project.tech.map((t) => (
-
                                     <span
                                         key={t}
                                         className="tech"
                                     >
                                         {t}
                                     </span>
-
                                 ))}
-
                             </div>
 
                             <h3>Screenshots</h3>
@@ -151,19 +111,14 @@ function ProjectCard({ project }) {
                                     ←
                                 </button>
 
-
                                 <div className="image-container">
-
                                     <img
                                         src={project.images[currImage]}
                                         alt={`${project.title} screenshot`}
                                     />
 
-
                                     <div className="dots">
-
                                         {project.images.map((_, index) => (
-
                                             <span
                                                 key={index}
                                                 className={
@@ -172,13 +127,10 @@ function ProjectCard({ project }) {
                                                     : ""
                                                 }
                                             />
-
                                         ))}
-
                                     </div>
 
                                 </div>
-
 
                                 <button
                                     onClick={() =>
@@ -199,17 +151,11 @@ function ProjectCard({ project }) {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-
                                 View on GitHub →
-
                             </a>
-
                         </motion.div>
-
                     </motion.div>
-
                 )}
-
             </AnimatePresence>
 
         </>

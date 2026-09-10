@@ -8,7 +8,6 @@ function Sidebar() {
     { name: "contact.js", id: "contact" },
   ];
 
-
   function scrollToSection(id) {
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
@@ -18,9 +17,7 @@ function Sidebar() {
 
   return (
     <aside className="sidebar">
-
       <p>EXPLORER</p>
-
       <ul>
         {sections.map((section) => (
           <li
@@ -31,7 +28,6 @@ function Sidebar() {
           </li>
         ))}
       </ul>
-
     </aside>
   );
 }

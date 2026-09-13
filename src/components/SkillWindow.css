@@ -7,7 +7,6 @@
     width:min(900px,90%);
 }
 
-
 /* Top bar like VS Code */
 .window-header {
     height: 45px;
@@ -19,7 +18,6 @@
     gap: 20px;
 }
 
-
 .window-header p {
     margin: 0;
     font-family: monospace;
@@ -27,14 +25,11 @@
     font-size: 14px;
 }
 
-
-
 /* Red yellow green dots */
 .window-buttons {
     display: flex;
     gap: 8px;
 }
-
 
 .window-buttons span {
     width: 12px;
@@ -43,22 +38,16 @@
     background: #30363d;
 }
 
-
-
 /* Editor area */
 .window-content {
     padding: 30px;
     font-family: monospace;
 }
 
-
-
 .code-line {
     color: #8b949e;
     margin: 15px 0;
 }
-
-
 
 /* Skill scrolling row */
 .skill-track {
@@ -69,13 +58,10 @@
     animation: scroll-skills 18s linear infinite;
 }
 
-
 /* pause when hovering */
 .skill-window:hover .skill-track {
     animation-play-state: paused;
 }
-
-
 
 .skill-item {
     display: flex;
@@ -87,29 +73,22 @@
     color: #c9d1d9;
 }
 
-
-
 .skill-item img {
     width: 55px;
     height: 55px;
     object-fit: contain;
 }
 
-
-
 .skill-item span {
     text-align: center;
     font-size: 14px;
 }
-
-
 
 /* scrolling animation */
 @keyframes scroll-skills {
     from {
         transform: translateX(0);
     }
-
     to {
         transform: translateX(-50%);
     }

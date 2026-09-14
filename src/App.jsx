@@ -14,8 +14,6 @@ function App() {
     <main className="page">
 
       <div className="ide-window">
-
-
         <div className="ide-header">
 
           <div className="window-buttons">
@@ -28,30 +26,20 @@ function App() {
 
         </div>
 
-
         <div className="ide-body">
-
           <Sidebar />
-
-
           <section className="content">
-
             <Hero />
             <About />
             <Skills />
             <Projects />
             {/*<Experience />*/}
             {/*<Contact />*/}
-
           </section>
-
         </div>
-
       </div>
-
     </main>
   );
 }
-
 
 export default App;

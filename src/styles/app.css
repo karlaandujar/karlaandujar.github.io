@@ -4,18 +4,13 @@
 }
 
 .ide-window {
-
     min-height:100vh;
-
     padding:30px;
-
     box-sizing:border-box;
-
 }
 
 
 /* Left sidebar */
-
 .sidebar {
   width: 220px;
   border-right: 1px solid #30363d;
@@ -36,13 +31,11 @@
   padding: 0;
 }
 
-
 .sidebar li {
   color: #c9d1d9;
   padding: 10px 0;
   cursor: pointer;
 }
-
 
 .sidebar li:hover {
   color: #58a6ff;
@@ -51,13 +44,8 @@
 
 
 /* Main content */
-
 .content {
-
     flex:1;
-
     padding:40px;
-
     overflow-y:auto;
-
 }

@@ -14,7 +14,7 @@ function Hero() {
       <h2>
         Honors Computer Science Student @ Virginia Tech
       </h2>
-
+      
       <div>
         <a
             href="/resume.pdf"
